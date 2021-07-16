@@ -6,13 +6,17 @@ import {
   Route,
 } from "react-router-dom";
 import Excutive from './components/Excutive';
+import LoginSignUp from './components/LoginSignUp/LoginSignUp';
 
 function App() {
   return (
     <Router>
       <Switch>
         <Route exact path="/">
-            <Excutive></Excutive>
+          <Excutive></Excutive>
+        </Route>
+        <Route path="/login">
+          <LoginSignUp></LoginSignUp>
         </Route>
       </Switch>
     </Router>
